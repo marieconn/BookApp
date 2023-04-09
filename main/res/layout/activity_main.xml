@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="libraryFloatingButton"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSearchBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/search_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnToRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/add_to_list"
+        app:layout_constraintEnd_toEndOf="@+id/btnSearchBook"
+        app:layout_constraintStart_toStartOf="@+id/btnSearchBook"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchBook" />
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/maps"
+        app:layout_constraintEnd_toEndOf="@+id/btnToRead"
+        app:layout_constraintStart_toStartOf="@+id/btnToRead"
+        app:layout_constraintTop_toBottomOf="@+id/btnToRead" />
+
+    <Button
+        android:id="@+id/openMapApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/open_maps"
+        app:layout_constraintEnd_toEndOf="@+id/btnMaps"
+        app:layout_constraintStart_toStartOf="@+id/btnMaps"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaps" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
